@@ -1,10 +1,10 @@
 # DiskSim SSD support
-# ©2008 Microsoft Corporation. All Rights Reserved
+# ï¿½2008 Microsoft Corporation. All Rights Reserved
 
 
 include .paths
 
-CFLAGS=-g $(DISKSIM_CFLAGS) $(LIBDDBG_CFLAGS) $(LIBPARAM_CFLAGS) $(DISKMODEL_CFLAGS) $(SSDMODEL_CFLAGS) -I..
+CFLAGS=-g $(DISKSIM_CFLAGS) $(LIBDDBG_CFLAGS) $(LIBPARAM_CFLAGS) $(DISKMODEL_CFLAGS) $(SSDMODEL_CFLAGS) -I.. -m32 -std=gnu89
 
 LIBPARAM=$(LIBPARAM_PREFIX)
 PACKAGE=ssdmodel

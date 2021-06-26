@@ -36,7 +36,7 @@ include .paths
 
 LIBPARAM=$(LIBPARAM_PREFIX)
 PACKAGE=dm
-CFLAGS = -g -D_DM_SOURCE $(LIBDDBG_CFLAGS) $(LIBPARAM_CFLAGS)
+CFLAGS = -g -D_DM_SOURCE $(LIBDDBG_CFLAGS) $(LIBPARAM_CFLAGS) -m32 -std=gnu89
 
 PARAM_PROTO = disk.modspec mech_g1.modspec \
 	layout_g1.modspec layout_g1_zone.modspec \

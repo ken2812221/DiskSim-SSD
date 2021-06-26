@@ -35,9 +35,9 @@ include .paths
 # -D_DISKMODEL_FREEBSD for the freebsd kernel (malloc foo)
 # -D_BSD_SOURCE for bsd-ish userspace to get uint32 and friends from the
 # right place
-CFLAGS = -g -I. $(LIBPARAM_CFLAGS) $(LIBDDBG_CFLAGS) -D_DM_SOURCE -Wall -Wshadow -Wno-unused -MD  # -O6  -fomit-frame-pointer -fexpensive-optimizations -fschedule-insns2 -march=pentium4
+CFLAGS = -g -I. $(LIBPARAM_CFLAGS) $(LIBDDBG_CFLAGS) -D_DM_SOURCE -Wall -Wshadow -Wno-unused -MD  -m32 -std=gnu89 # -O6  -fomit-frame-pointer -fexpensive-optimizations -fschedule-insns2 -march=pentium4
 
-CXXFLAGS = -g -I. $(LIBPARAM_CFLAGS) $(LIBDDBG_CFLAGS) -D_DM_SOURCE -Wall -Wno-unused  -MD
+CXXFLAGS = -g -I. $(LIBPARAM_CFLAGS) $(LIBDDBG_CFLAGS) -D_DM_SOURCE -Wall -Wno-unused  -MD  -m32
 
 CC-DEP = $(CC)
 CP = cp -p

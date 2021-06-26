@@ -38,7 +38,7 @@ CFLAGS = -g \
         $(DISKSIM_CFLAGS) \
         $(DISKMODEL_CFLAGS) \
         $(LIBPARAM_CFLAGS) \
-        $(LIBDDBG_CFLAGS) 
+        $(LIBDDBG_CFLAGS)  -m32 -std=gnu89
 
 LDFLAGS = $(DISKSIM_LDFLAGS) \
 	  $(DISKMODEL_LDFLAGS) \

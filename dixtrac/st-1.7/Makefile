@@ -69,7 +69,7 @@ BUILD       = DBG
 TARGETDIR   = $(OS)_$(shell uname -r)_$(BUILD)
 
 DEFINES     = -D$(OS)
-CFLAGS      =
+CFLAGS      = -m32 -std=gnu89
 SFLAGS      =
 ARFLAGS     = -rv
 LNFLAGS     = -s

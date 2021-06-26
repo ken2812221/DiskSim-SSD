@@ -1,5 +1,5 @@
 # DiskSim SSD support
-# ©2008 Microsoft Corporation. All Rights Reserved
+# ï¿½2008 Microsoft Corporation. All Rights Reserved
 
 include .paths
 
@@ -12,7 +12,7 @@ FREEBLOCKS_OFLAGS =
 DEBUG_OFLAGS = -g -DASSERTS # -DDEBUG=1
 PROF_OFLAGS = -g -DASSERTS -p
 GPROF_OFLAGS = -g -DASSERTS -pg
-CFLAGS = $(DEBUG_OFLAGS) $(DISKSIM_CFLAGS) $(DISKMODEL_CFLAGS) -I../ -I$(DISKSIM_PREFIX)/src
+CFLAGS = $(DEBUG_OFLAGS) $(DISKSIM_CFLAGS) $(DISKMODEL_CFLAGS) -I../ -I$(DISKSIM_PREFIX)/src -m32 -std=gnu89
 
 #CC = cc
 CC = gcc -Wall -Wno-unused -MD

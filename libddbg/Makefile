@@ -32,7 +32,7 @@
 
 # needs bitvector.h
 # -D_LIBDDBG_FREEBSD for freebsd kernel
-CFLAGS = -g -I../libparam
+CFLAGS = -g -I../libparam -m32 -std=gnu89
 
 all: libddbg.a
 	mkdir -p include/libddbg lib
